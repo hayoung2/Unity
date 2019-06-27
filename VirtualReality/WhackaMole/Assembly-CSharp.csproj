@@ -88,9 +88,12 @@
      <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorManager.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\PhoneEvent.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\IControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\GameController.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\GazeInputModule.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\GvrSettings.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\GvrViewer.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Mole.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Player.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Pose3D.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\UI\GvrGaze.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\UI\GvrReticle.cs" />
