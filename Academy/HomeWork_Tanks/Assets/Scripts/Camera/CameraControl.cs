@@ -4,8 +4,8 @@ public class CameraControl : MonoBehaviour
 {
     public float m_DampTime = 0.2f;                 
     public float m_ScreenEdgeBuffer = 4f;           
-    public float m_MinSize = 6.5f;                  
-    [HideInInspector] public Transform[] m_Targets; 
+    public float m_MinSize = 6.5f;
+    [HideInInspector] public Transform[] m_Targets;
 
 
     private Camera m_Camera;                        
@@ -40,7 +40,7 @@ public class CameraControl : MonoBehaviour
         Vector3 averagePos = new Vector3();
         int numTargets = 0;
 
-        for (int i = 0; i < m_Targets.Length; i++)
+        for (int i = 0; i < m_Targets.Length; i++)//길이만큼 
         {
             if (!m_Targets[i].gameObject.activeSelf)
                 continue;

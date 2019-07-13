@@ -68,7 +68,7 @@ namespace Complete
             m_FillImage.color = Color.Lerp (m_ZeroHealthColor, m_FullHealthColor, m_CurrentHealth / m_StartingHealth);
         }
 
-
+        
         private void OnDeath ()
         {
             // Set the flag so that this function is only called once.

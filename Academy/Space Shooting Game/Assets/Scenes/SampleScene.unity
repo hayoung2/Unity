@@ -527,10 +527,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundary:
-    xMin: -5
-    xMax: 5
-    zMin: -6
-    zMax: 7
+    xMin: -8
+    xMax: 8
+    zMin: -7
+    zMax: 9.5
   rigid: {fileID: 1921604400}
   speed: 10
   tilt: 4
@@ -629,7 +629,7 @@ Transform:
   m_GameObject: {fileID: 1948121601}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -2.5, z: -3.07}
-  m_LocalScale: {x: 15, y: 30, z: 1}
+  m_LocalScale: {x: 18, y: 35, z: 1}
   m_Children:
   - {fileID: 2100889653}
   m_Father: {fileID: 0}
