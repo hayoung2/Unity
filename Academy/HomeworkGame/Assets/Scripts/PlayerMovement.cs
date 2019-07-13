@@ -23,4 +23,10 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = q;
     }
 
+    private void OnTriggerEnter(Collider collider)
+    {
+        Destroy(collider.gameObject);
+        Destroy(gameObject);
+    }
+
 }

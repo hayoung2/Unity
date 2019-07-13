@@ -11,7 +11,10 @@ public class RockManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(CreateRockObject());
+
     }
+
+   
 
     IEnumerator CreateRockObject()
     {

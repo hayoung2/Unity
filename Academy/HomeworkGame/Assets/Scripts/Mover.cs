@@ -7,7 +7,7 @@ public class Mover : MonoBehaviour
     private Rigidbody rigid;
     public float minSpeed;
     public float maxSpeed;
-    private Vector2 
+
 
     private void Start()
     {
