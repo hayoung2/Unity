@@ -53,11 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DestroyContact.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Mover.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\RockManager.cs" />
      <Compile Include="Assets\Scripts\TextManager.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Unity/Academy/HomeworkGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

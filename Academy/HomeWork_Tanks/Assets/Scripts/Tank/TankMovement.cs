@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class TankMovement : MonoBehaviour
 {
@@ -9,15 +10,15 @@ public class TankMovement : MonoBehaviour
     public AudioClip m_EngineIdling;       
     public AudioClip m_EngineDriving;      
     public float m_PitchRange = 0.2f;
+    public Text text;
 
-    
     private string m_MovementAxisName;     
     private string m_TurnAxisName;         
     private Rigidbody m_Rigidbody;         
     private float m_MovementInputValue;    
     private float m_TurnInputValue;        
-    private float m_OriginalPitch;         
-
+    private float m_OriginalPitch;
+    
 
     private void Awake()
     {
@@ -94,6 +95,7 @@ public class TankMovement : MonoBehaviour
     private void Move()
     {
         Vector3 movement = transform.forward * m_MovementInputValue * m_Speed * Time.deltaTime;
+        text.Disable();
 
         m_Rigidbody.MovePosition(m_Rigidbody.position + movement);
         // Adjust the position of the tank based on the player's input.
