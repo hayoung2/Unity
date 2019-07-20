@@ -42,9 +42,10 @@ GameObject:
   - component: {fileID: 54760405994315358}
   - component: {fileID: 135367800697312946}
   - component: {fileID: 114508403464022902}
-  - component: {fileID: 114456602672187176}
   - component: {fileID: 114438733713408446}
   - component: {fileID: 82579561909888444}
+  - component: {fileID: 6784148872825346077}
+  - component: {fileID: 6073752581625446253}
   m_Layer: 0
   m_Name: Enemy Ship
   m_TagString: Enemy
@@ -110,23 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 823c2180804e9b446820c09430d90c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -10
---- !u!114 &114456602672187176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506897845904872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b00a86408ee97aa479fd3c0566934a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explostion: {fileID: 100012, guid: 788815ce4e672b447af2346ee16c3270, type: 3}
-  playerExplostion: {fileID: 1070954440637628, guid: cea78b510d92e8c489f445af20b45ab1,
-    type: 3}
-  scoreValue: 5
+  speed: -6
 --- !u!114 &114438733713408446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +220,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &6784148872825346077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506897845904872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375453237f0c2ba46b812cbd04cad60c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0.1, y: 0, z: 12}
+  velocity: 0.1
+  accelaration: 0.1
+  fireRate: 10
+  bolt: {fileID: 1242752944759300, guid: 8e8dacf36e7119b41a9730e39bcf2fb3, type: 3}
+--- !u!114 &6073752581625446253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506897845904872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00a86408ee97aa479fd3c0566934a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explostion: {fileID: 100012, guid: 788815ce4e672b447af2346ee16c3270, type: 3}
+  playerExplostion: {fileID: 1070954440637628, guid: cea78b510d92e8c489f445af20b45ab1,
+    type: 3}
+  scoreValue: 5
 --- !u!1 &1531983145928812
 GameObject:
   m_ObjectHideFlags: 0

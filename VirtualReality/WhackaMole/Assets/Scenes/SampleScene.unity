@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,6 +133,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!1001 &97855183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -798,6 +800,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!1001 &433266953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1090,6 +1094,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!1 &527890770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6657553796460460348, guid: 2ae6e4cf024637d4e9e0e278a88b3942,
@@ -1111,6 +1117,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,6 +1236,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!1001 &601689514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1986,6 +1996,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!4 &1498896944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6263417125765139314, guid: 2ae6e4cf024637d4e9e0e278a88b3942,
@@ -2013,6 +2025,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!1 &1535941274 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6657553796460460348, guid: 2ae6e4cf024637d4e9e0e278a88b3942,
@@ -2034,6 +2048,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!4 &1738538131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6263417125765139314, guid: 2ae6e4cf024637d4e9e0e278a88b3942,
@@ -2249,6 +2265,8 @@ MonoBehaviour:
   visibleHeight: 5.11
   hiddenHeight: 4.68
   speed: 2
+  partical: {fileID: 3260833629822176281, guid: b76e72321fbe9564588e3845dcf7080d,
+    type: 3}
 --- !u!1001 &2014272412
 PrefabInstance:
   m_ObjectHideFlags: 0
