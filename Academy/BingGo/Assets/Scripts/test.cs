@@ -217,6 +217,7 @@ public class test : MonoBehaviour
                 {
                     if (result[j, k] == random[i])
                     {
+                        Input[j*5+k].image.color=new Color(75 / 255f, 73 / 255f, 73 / 255f,105/255f);
                         result[j, k] = -5;
                     }
                 }
@@ -239,6 +240,8 @@ public class test : MonoBehaviour
                     cnt++;
                     if (cnt == 5)
                         bingo++;
+
+                    
                 }
 
             }
@@ -303,6 +306,8 @@ public class test : MonoBehaviour
         Score.enabled=(isScore);
     }
 
+
+    
 }
    
 
