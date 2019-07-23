@@ -8,12 +8,17 @@ public class test : MonoBehaviour
     private int[,] result = new int[5,5];
     private int[,] copyArr = new int[5,5];
     public InputField[] Input = new InputField[25];
- 
+
+    public GameObject ScoreText;
+    public Text Score;
     private int score;
+    private bool isScore = false;
     public bool isRun = false;
     public Button btn;
     public int count;
+    
 
+    int[] random;
 
     void Start()
     {
@@ -21,6 +26,7 @@ public class test : MonoBehaviour
 
 
         btn.onClick.AddListener(RunTask);
+        random = new int[count];
 
         //Transform[] objList = gameObject.GetComponentsInChildren(typeof(Transform));
 
@@ -42,11 +48,14 @@ public class test : MonoBehaviour
     {
 
 
-        Debug.Log("완료");
+    
 
         score=Inspect();
-        Debug.Log(score);
 
+        if (isScore)
+            ShowScore();
+
+      
         yield return new WaitForSeconds(5f);
     }
 
@@ -166,35 +175,42 @@ public class test : MonoBehaviour
     }
     
   
-    public int RandomCount(int i)
+    public int RandomCount()
     {
-        int[] random = new int[count];
-
-        random[i] = Random.Range(1, 25);
-
-        for (int j = 0; j < i; j++)
+        bool same;
+        for (int i = 0; i < count; i++)
         {
-            if (random[i] == random[j])
+            while (true)
             {
                 random[i] = Random.Range(1, 26);
+                same = false;
+                for (int j = 0; j < i; j++)
+                {
+                    if (random[j] == random[i])
+                    {
+                        same = true;
+                        break;
+                    }
+
+                }
+                if (!same) break;
             }
-            return random[i];
         }
 
-        return random[i];
+
+        return 0;
 
     }
 
     public int Inspect()
     {
-        int[] random = new int[count];
         int[,] answer = new int[5, 5];
+        RandomCount();
+
 
         for (int i = 0; i < count; i++)
         {
-            random[i] = RandomCount(i);
 
-            
             for (int j = 0; j < 5; j++)
             {
                 for (int k = 0; k < 5; k++)
@@ -205,8 +221,9 @@ public class test : MonoBehaviour
                     }
                 }
             }
-            
+
         }
+
 
         int bingo = 0;
 
@@ -242,41 +259,51 @@ public class test : MonoBehaviour
                     if (cnt == 5)
                         bingo++;
                 }
-                
-            }
-            
-        }
 
-        for(int i = 0; i < 5; i++)
+            }
+
+        }
+        int cnt_ = 0;
+        for (int i = 0; i < 5; i++)
         {
-            int cnt = 0;
+
 
             if (result[i, i] != -5)
                 break;
             else
             {
-                cnt++;
-                if (cnt == 5)
+                cnt_++;
+                if (cnt_ == 5)
                     bingo++;
             }
         }
-
+        cnt_ = 0;
         for (int i = 0; i < 5; i++)
         {
-            int cnt = 0;
+
 
             if (result[i, 4 - i] != -5)
                 break;
             else
             {
-                cnt++;
-                if (cnt == 5)
+                cnt_++;
+                if (cnt_ == 5)
                     bingo++;
             }
 
         }
+        isScore = true;
         return bingo;
     }
-   
+
+    public void ShowScore()
+    {
+        Score.text = score + " Bingo";
+        ScoreText.SetActive(isScore);
+        Score.enabled=(isScore);
+    }
 
 }
+   
+
+
