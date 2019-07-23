@@ -55,6 +55,8 @@ public class test : MonoBehaviour
         if (isScore)
             ShowScore();
 
+        isRun = false;
+
       
         yield return new WaitForSeconds(5f);
     }
@@ -218,6 +220,7 @@ public class test : MonoBehaviour
                     if (result[j, k] == random[i])
                     {
                         Input[j*5+k].image.color=new Color(75 / 255f, 73 / 255f, 73 / 255f,105/255f);
+                        StartCoroutine(wait());
                         result[j, k] = -5;
                     }
                 }
@@ -306,6 +309,10 @@ public class test : MonoBehaviour
         Score.enabled=(isScore);
     }
 
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(5f);
+    }
 
     
 }
