@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5424,6 +5424,7 @@ GameObject:
   - component: {fileID: 906479501}
   - component: {fileID: 906479507}
   - component: {fileID: 906479508}
+  - component: {fileID: 906479509}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5563,35 +5564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 381b00e3b80cef3429539df9e7b33bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Input:
-  - {fileID: 941147634}
-  - {fileID: 867116396}
-  - {fileID: 30960108}
-  - {fileID: 1052698857}
-  - {fileID: 572673091}
-  - {fileID: 1499356890}
-  - {fileID: 1614536911}
-  - {fileID: 372778388}
-  - {fileID: 1737405316}
-  - {fileID: 110824907}
-  - {fileID: 1526261304}
-  - {fileID: 1242240766}
-  - {fileID: 613274039}
-  - {fileID: 1997942854}
-  - {fileID: 662606234}
-  - {fileID: 1006914608}
-  - {fileID: 1740099905}
-  - {fileID: 508536353}
-  - {fileID: 700001711}
-  - {fileID: 767040493}
-  - {fileID: 677754290}
-  - {fileID: 1035240234}
-  - {fileID: 1382132897}
-  - {fileID: 1928322427}
-  - {fileID: 1747715271}
-  count: 0
-  isRun: 0
-  btn: {fileID: 1543838592}
 --- !u!114 &906479508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5599,7 +5571,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906479500}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4621580815cbb604a90f07db2aacbf21, type: 3}
   m_Name: 
@@ -5634,7 +5606,50 @@ MonoBehaviour:
   Score: {fileID: 440888778}
   isRun: 0
   btn: {fileID: 1543838592}
-  count: 15
+  count: 18
+--- !u!114 &906479509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906479500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1257d31f279131458d8807e3adfb04a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Input:
+  - {fileID: 941147634}
+  - {fileID: 867116396}
+  - {fileID: 30960108}
+  - {fileID: 1052698857}
+  - {fileID: 572673091}
+  - {fileID: 1499356890}
+  - {fileID: 1614536911}
+  - {fileID: 372778388}
+  - {fileID: 1737405316}
+  - {fileID: 110824907}
+  - {fileID: 1526261304}
+  - {fileID: 1242240766}
+  - {fileID: 613274039}
+  - {fileID: 1997942854}
+  - {fileID: 662606234}
+  - {fileID: 1006914608}
+  - {fileID: 1740099905}
+  - {fileID: 508536353}
+  - {fileID: 700001711}
+  - {fileID: 767040493}
+  - {fileID: 677754290}
+  - {fileID: 1035240234}
+  - {fileID: 1382132897}
+  - {fileID: 1928322427}
+  - {fileID: 1747715271}
+  ScoreText: {fileID: 1146166025}
+  Score: {fileID: 440888778}
+  isRun: 0
+  btn: {fileID: 1543838592}
+  count: 25
 --- !u!1 &923536573
 GameObject:
   m_ObjectHideFlags: 0
@@ -8944,7 +8959,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1543838593}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1543838592}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1543838593
@@ -9001,7 +9027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204, y: 241}
+  m_AnchoredPosition: {x: 204, y: 225}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1604468815
@@ -11605,7 +11631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 598, y: -647}
+  m_AnchoredPosition: {x: 707, y: -639}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120715842
