@@ -112,7 +112,8 @@ public class BoxController : MonoBehaviour
                     Debug.Log("위에 클릭 함 ");
                     move = false;
                     RandomBox();
-                    
+                    move = true;
+
                 }
                 else if (Input.GetKey(KeyCode.DownArrow))
                 {
@@ -162,6 +163,7 @@ public class BoxController : MonoBehaviour
                     //move = false;
                     move = false;
                     RandomBox();
+                    move = true;
                 }
                 else if (Input.GetKey(KeyCode.RightArrow))
                 {
@@ -212,6 +214,7 @@ public class BoxController : MonoBehaviour
                     move = false;
                     //check = false;
                     RandomBox();
+                    move = true;
 
                 }
                 else if (Input.GetKey(KeyCode.LeftArrow))
@@ -263,6 +266,7 @@ public class BoxController : MonoBehaviour
                     //move = false;
                     move = false;
                     RandomBox();
+                    move = true;
                 }
                 //if(check)
                 //    BoxCreate();
@@ -303,7 +307,7 @@ public class BoxController : MonoBehaviour
             boxArr[count] = Instantiate(Box[1], new Vector3(xResult, yResult, 0f), Quaternion.identity);
             Background[yNum, xNum] = boxArr[count];
            
-            move = true;
+           
        
 
 

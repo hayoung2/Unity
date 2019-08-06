@@ -125,6 +125,9 @@ GameObject:
   - component: {fileID: 246828911}
   - component: {fileID: 246828910}
   - component: {fileID: 246828914}
+  - component: {fileID: 246828915}
+  - component: {fileID: 246828916}
+  - component: {fileID: 246828917}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -222,7 +225,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246828909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27936e78bbf407f4c8c3130d7b1ae0ac, type: 3}
   m_Name: 
@@ -230,6 +233,68 @@ MonoBehaviour:
   Box:
   - {fileID: 7801529348237662631, guid: 53c04814fc1b9244e97199249766f88a, type: 3}
   - {fileID: 7678749739279540712, guid: 820d9d09c2939cb4986f4cf1f22de9ae, type: 3}
+--- !u!114 &246828915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246828909}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092e26c14c63f748b0d6cbb6a077bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box_base:
+  - {fileID: 7801529348237662631, guid: 53c04814fc1b9244e97199249766f88a, type: 3}
+  - {fileID: 7678749739279540712, guid: 820d9d09c2939cb4986f4cf1f22de9ae, type: 3}
+--- !u!114 &246828916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246828909}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9df8d5b07607443a2c4a945dc71eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x_pos:
+  - -21
+  - 3
+  - 27
+  - 51
+  y_pos:
+  - 144
+  - 120
+  - 96
+  - 72
+--- !u!114 &246828917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246828909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce698b3705863d47bf3372f6e1aa88d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box_base:
+  - {fileID: 7801529348237662631, guid: 53c04814fc1b9244e97199249766f88a, type: 3}
+  - {fileID: 7678749739279540712, guid: 820d9d09c2939cb4986f4cf1f22de9ae, type: 3}
+  x_pos:
+  - -21
+  - 3
+  - 27
+  - 51
+  y_pos:
+  - 144
+  - 120
+  - 96
+  - 72
 --- !u!1 &457389619
 GameObject:
   m_ObjectHideFlags: 0
