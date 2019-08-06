@@ -7,7 +7,7 @@ using UnityEngine;
 public class game_manage : MonoBehaviour
 {
     public GameObject[] box_base;
-    bool move=false;
+    bool move=true;
     public float[] x_pos = { -21f, 3f, 27f, 51f };
     public float[] y_pos = { 144f, 120f, 96f, 72f };
     GameObject[,] box = new GameObject[4, 4];
@@ -18,6 +18,7 @@ public class game_manage : MonoBehaviour
     {
         //맨처음 박스 두개 생성
         Spawn_box();
+        move = true;
         Spawn_box();
 
     }
@@ -26,30 +27,42 @@ public class game_manage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (move)
+            Spawn_box();
 
 
-
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
             for (x = 0; x < 4; x++)
                 for (y = 3; y > 1; y--)
                     for (int i = 1; i <= y; i++)
                         combine_move(x, i, x, i - 1);
-        else if (Input.GetKey(KeyCode.DownArrow))
+            move = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
             for (x = 0; x < 4; x++)
                 for (y = 3; y > 1; y--)
                     for (int i = 0; i < y; i++)
                         combine_move(x, i, x, i + 1);
-        else if (Input.GetKey(KeyCode.RightArrow))
+            move = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
             for (y = 0; y < 4; y++)
                 for (x = 3; x > 1; x--)
                     for (int i = 0; i < x; i++)
                         combine_move(i, y, i + 1, y);
-        else if (Input.GetKey(KeyCode.LeftArrow))
+            move = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
             for (y = 0; y < 4; y++)
                 for (x = 3; x > 1; x--)
                     for (int i = 1; i <= x; i++)
                         combine_move(i, y, i - 1, y);
-
+            move = true;
+        }
     }
 
 
@@ -71,7 +84,7 @@ public class game_manage : MonoBehaviour
         }
         //생성칸에 2또는 4 객체 생성 
         box[x, y] = Instantiate(Random.Range(0, 2) > 0 ? box_base[0] : box_base[1], new Vector3(x_pos[x], y_pos[y], 0), Quaternion.identity);
-        
+        move = false;
     }
 
     void combine_move(int x_start, int y_start, int x_des, int y_des)
@@ -86,10 +99,12 @@ public class game_manage : MonoBehaviour
                 box[x_des, y_des] = box[x_start, y_start];   //너는 이제 도착칸이다
                 box[x_start, y_start] = null;   //시작칸 초기화~
             }
-            else if (box[x_des, y_des].name == box[x_start, y_start].name)
+            if (box[x_des, y_des].name == box[x_start, y_start].name)
             {
-
+                
+               // Destroy(box[x_start, y_start]);
             }
+
         }
        
         
