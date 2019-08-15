@@ -14,6 +14,11 @@ public class GameManager : MonoSingleton<GameManager>
     private void Awake()
     {
         cards = new Card[cardSize.x * cardSize.y];
+       
+    }
+    private void Start()
+    {
+        GameStart();
     }
 
     //  OnGuI?
@@ -26,7 +31,7 @@ public class GameManager : MonoSingleton<GameManager>
                     Screen.height - (24f + 68f),
                     96f,
                     68f),
-            isStart ? "ReStart" : "Start"))
+            isStart ? "ReStart" : "Restart"))
         {
             GameStart();
         }
