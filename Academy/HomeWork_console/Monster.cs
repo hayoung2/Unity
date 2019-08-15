@@ -10,6 +10,8 @@ public class Monster
     public int hp;
     public int attack;
     public int maxhp;
+    public bool check=false;
+    
    
 
     public Monster(string name, int hp , int attack)
@@ -17,18 +19,21 @@ public class Monster
         this.name = name;
         this.hp = hp;
         this.attack = attack;
-        this.maxhp = hp;
+        maxhp = hp;
     }
 
     public bool Heal()
     {
-        hp = maxhp;
+        this.hp = maxhp;
         return false;
     }
     
     public bool Attack(int atk)
     {
         this.hp -= atk;
+        if (hp <= 0)
+            check = true;
+
         return false;
     }
    
