@@ -53,10 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BoxController.cs" />
-     <Compile Include="Assets\Scripts\game_manage.cs" />
      <Compile Include="Assets\Scripts\game_manager.cs" />
-     <Compile Include="Assets\Scripts\movemove.cs" />
+     <Compile Include="Assets\Scripts\ObjectMove.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Unity/Academy/2048_/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

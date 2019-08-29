@@ -54,11 +54,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Card.cs" />
+     <Compile Include="Assets\Scripts\Database.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\Scripts\Managers\UpdateManager.cs" />
+     <Compile Include="Assets\Scripts\options\GameOption.cs" />
      <Compile Include="Assets\Scripts\StartManager.cs" />
      <Compile Include="Assets\Scripts\Tools\MonoSingleton.cs" />
      <Compile Include="Assets\Scripts\Tools\Singleton.cs" />
+     <Compile Include="Assets\Scripts\UserController.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Unity/2DCard/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

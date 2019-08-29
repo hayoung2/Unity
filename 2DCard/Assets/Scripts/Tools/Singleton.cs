@@ -15,6 +15,10 @@ public class Singleton<T>
 
             return instance;
         }
-        set => instance = value;
+       
     }
 }
+//위에 Singleton은 
+//DonDestroyOnLoad 파괴 ㄴㄴ(씬 바뀌어도)  ~ singleton 단 하나의 객체만 유지시키기 위해 만듦 유지시킴
+//score db 같은 경우 사용 
+
